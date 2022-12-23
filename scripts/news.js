@@ -32,7 +32,7 @@ function render(
       // use for news or search
       const fetchContent = !searchKey
         ? `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&pageSize=${pageSize}&page=${page}&apiKey=${apiKey}`
-        : `https://newsapi.org/v2/everything?q=${searchKey}&from=2022-09-06&to=2022-09-06&sortBy=popularity&pageSize=${pageSize}&page=${page}&apiKey=${apiKey}`;
+        : `https://newsapi.org/v2/everything?q=${searchKey}&from=2022-12-23&to=2022-12-23&sortBy=popularity&pageSize=${pageSize}&page=${page}&apiKey=${apiKey}`;
 
       const res = await fetch(fetchContent);
       const data = await res.json();
